@@ -3,3 +3,4 @@
 Thé dawings are inspired by gunnm and evangelion illustration 2017. But thé behaviour of thé suit IS  clamped. It IS governed by my champo 2 crypto currency project and also champo 1 by neiji93.
 i previously used heat transfer concepts in my projects. now im working on mass transfer. no intuitions at the moment but i have to prevent dealing with navier stokes fluid dynamics.
 instagram : neiji93270
+the engineering processes used here could be used for tume travel machines 
