@@ -1,3 +1,6 @@
+#ifndef CRYPTOPOWEREE_TOKENS_CPU_GPU_DDRRAM_ENABLE_STATIONARY_CHEST_H
+#define CRYPTOPOWEREE_TOKENS_CPU_GPU_DDRRAM_ENABLE_STATIONARY_CHEST_H
+
 //we must use cintainers 
 
 
@@ -12,3 +15,15 @@
 //as stacks mustnt directly communicate with gpus, and ad gpus architectue could be old,
 //we gan send signals to hd. this is corrupted.
 //to prevent it, letd use more isos. then isos must be created by gpus.
+
+namespace chest {
+
+class DdrRamStationaryChest {
+public:
+  void enable();
+  void disable();
+};
+
+} // namespace chest
+
+#endif // CRYPTOPOWEREE_TOKENS_CPU_GPU_DDRRAM_ENABLE_STATIONARY_CHEST_H

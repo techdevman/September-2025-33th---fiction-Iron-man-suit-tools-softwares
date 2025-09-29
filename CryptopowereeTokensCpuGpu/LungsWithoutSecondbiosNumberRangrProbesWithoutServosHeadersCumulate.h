@@ -1,3 +1,7 @@
+// header guards added to stabilize the interface
+#ifndef CRYPTO_TOKENS_LUNGS_PROBES_CUMULATE_H
+#define CRYPTO_TOKENS_LUNGS_PROBES_CUMULATE_H
+
 //if we dont deal with chest second bios s, we can
 //prevent 2 cpu messages. then contracts are the keys with tokens.
 //as every containers in a same manner. so as we fullfill crypto
@@ -9,3 +13,5 @@
 //without tokens. so we can use at least 40 000 probes. but here
 //the best choice would be to use 2500 probes like in chest beczuse we
 //have to trst our programs (cyber decurity, subsystems). plus, we cannot prevent high speed schedulling.
+
+#endif // CRYPTO_TOKENS_LUNGS_PROBES_CUMULATE_H

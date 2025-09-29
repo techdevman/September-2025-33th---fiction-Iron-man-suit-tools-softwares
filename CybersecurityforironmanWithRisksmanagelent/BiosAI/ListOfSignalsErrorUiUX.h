@@ -7,18 +7,33 @@
 //after that, the boot system can still be contained in hds.
 //so thr bios can support several os. lets use it to enable light virtual machine.
 
-class loghtvirtualmachineinbiosziForCo'tract
-{
+#ifndef BIOSAI_LIST_OF_SIGNALS_ERROR_UI_UX_H
+#define BIOSAI_LIST_OF_SIGNALS_ERROR_UI_UX_H
 
+namespace biosai {
+
+// corrected name from: loghtvirtualmachineinbiosziForCo'tract
+class LightVirtualMachineInBiosForContract {
 public:
-  //slight machine behaviour
-  void bootosfrombiosaiWithSyncGpus();
+  // slight machine behaviour
+  void bootOsFromBiosAiWithSyncGpus();
 
-  //slight behaviour too
-    void addostobootWithonesignal();
-}
+  // slight behaviour too
+  void addOsToBootWithOneSignal();
 
+  // query and maintenance
+  bool isBooted() const;
+  unsigned int getOsCount() const;
+  void reset();
+ 
+private:
+  bool booted_ = false;
+  unsigned int osCount_ = 0u;
+};
 
+} // namespace biosai
+
+#endif // BIOSAI_LIST_OF_SIGNALS_ERROR_UI_UX_H
 
 //the virtual machine can provide 
 //small contracts. so the chest suit can handlen

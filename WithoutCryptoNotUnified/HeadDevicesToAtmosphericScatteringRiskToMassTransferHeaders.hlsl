@@ -14,3 +14,33 @@
   //then here gram is suited for old gpu czches.
 
 void atomosphericScztteringToRoughnessRisks(){}
+
+// Minimal vertex+pixel pair for compatibility
+struct VSIn {
+    float3 position : POSITION;
+    float2 uv : TEXCOORD0;
+};
+
+struct VSOutHead {
+    float4 position : SV_Position;
+    float2 uv : TEXCOORD0;
+};
+
+VSOutHead VSMainHead(VSIn input)
+{
+    VSOutHead o;
+    o.position = float4(input.position, 1.0);
+    o.uv = input.uv;
+    return o;
+}
+
+cbuffer HeadParams : register(b0)
+{
+    float3 color;
+    float intensity;
+}
+
+float4 PSMainHead(VSOutHead input) : SV_Target
+{
+    return float4(color * intensity, 1.0);
+}
