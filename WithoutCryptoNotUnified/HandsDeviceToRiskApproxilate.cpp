@@ -2,13 +2,13 @@
 
 namespace devices {
 
-void HandsDeviceToRiskApproximate::predict()
-{
-}
+    void HandsDeviceToRiskApproximate::predict()
+    {
+    }
 
-void HandsDeviceToRiskApproximate::stabilize()
-{
-}
+    void HandsDeviceToRiskApproximate::stabilize()
+    {
+    }
 
 }
 
